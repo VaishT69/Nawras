@@ -88,60 +88,68 @@ export default function Contact() {
       <div className="flex flex-col md:flex-row gap-8 items-start">
         {/* IMAGE */}
         <div className="md:w-1/2 w-full h-full flex justify-center items-center">
-          <Image src={logo} alt="Nawras" width={700} height={200} className="mt-16"/>
+          <Image
+            src={logo}
+            alt="Nawras"
+            width={700}
+            height={200}
+            className="mt-16"
+          />
         </div>
         {/* CONTENT */}
         <div className="md:w-1/2 mt-16">
-        <h1 className="text-6xl font-bold mb-4">Contact Us</h1>
-        <p className="text-lg mb-2">
-          Feeel free to reach out via the form below:
-        </p>
-        <hr className="w-full mb-10"/>
-        <div className="w-px h-full bg-black mx-6"></div>
-        <form
-          onSubmit={handleSubmit}
-          className="flex flex-col gap-3 max-w-md mx-auto"
-        >
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className=" h-10 p-2 border rounded"
-          />
-          {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
-          <input
-            type="email"
-            placeholder="Email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="h-10  p-2 border rounded"
-          />
-          {errors.email && (
-            <p className="text-red-500 text-sm">{errors.email}</p>
-          )}
-
-          <textarea
-            placeholder="Message"
-            rows="5"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className="p-2 border rounded"
-          />
-          {errors.message && (
-            <p className="text-red-500 text-sm">{errors.message}</p>
-          )}
-
-          <button
-            type="submit"
-            className="bg-[#efe4b5] text-black  h-10 w-15 px-2 py-2 rounded hover:bg-white transition border-black border-2"
+          <h1 className="text-6xl font-bold mb-4">Contact Us</h1>
+          <p className="text-lg mb-2">
+            Feeel free to reach out via the form below:
+          </p>
+          <hr className="w-full mb-10" />
+          <div className="w-px h-full bg-black mx-6"></div>
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-3 max-w-md mx-auto"
           >
-            Send
-          </button>
-        </form>
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className=" h-10 p-2 border rounded"
+            />
+            {errors.name && (
+              <p className="text-red-500 text-sm">{errors.name}</p>
+            )}
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="h-10  p-2 border rounded"
+            />
+            {errors.email && (
+              <p className="text-red-500 text-sm">{errors.email}</p>
+            )}
+
+            <textarea
+              placeholder="Message"
+              rows="5"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="p-2 border rounded"
+            />
+            {errors.message && (
+              <p className="text-red-500 text-sm">{errors.message}</p>
+            )}
+
+            <button
+              type="submit"
+              className="bg-[#efe4b5] text-black  h-10 w-15 px-2 py-2 rounded hover:bg-white transition border-black border-2"
+            >
+              Send
+            </button>
+          </form>
         </div>
       </div>
     </div>
