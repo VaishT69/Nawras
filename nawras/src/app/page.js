@@ -1,6 +1,7 @@
 import Image from "next/image";
 // import Header from '../components/Header';
 import Link from "next/link";
+import Button from "../components/buttons/Button";
 
 export default function Home() {
   return (
@@ -113,18 +114,22 @@ export default function Home() {
         </div>
       </section>
       <section>
-      <div className="flex flex-col md:flex-row gap-8 items-start">
+        <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="">
             {" "}
-            <h1 className="font-black text-2xl text-black ">Keen To Learn A New Instrument?</h1>
+            <h1 className="font-black text-2xl text-black ">
+              Keen To Learn A New Instrument?
+            </h1>
             <p className="text-black">Contact us now for more information</p>
-            <Link href="/contact">
-            <button className="bg-amber-200 hover:bg-red-400 text-black">Contact Us</button>
-            </Link>
+            <div className=" mt-2">
 
+              {" "}
+              <Link href="/contact">
+                {/* <button className="bg-amber-200 hover:bg-red-400 text-black">Contact Us</button> */}
+                <Button />
+              </Link>
+            </div>
           </div>
-
-       
         </div>
       </section>
     </main>
