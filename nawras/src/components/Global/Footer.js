@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#efe4b5] text-black p-4 mt-10">
+    <footer className="bg-[#efe4b5] text-black p-4 mt-10 rounded-t-4xl">
       <div>
         <ul className="flex flex-cols gap-6">
           <Link href="https://www.facebook.com/NawrasMusicPro/" target="_blank">

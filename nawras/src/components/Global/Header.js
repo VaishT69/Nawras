@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Header() {
     const logo = "/assets/images/nawras-logo.jpg";
     return (
-        <header className="bg-[#efe4b5] text-black p-4">
+        <header className="bg-[#efe4b5] text-black p-4 rounded-b-4xl">
             <nav className="flex justify-between items-center">
                 {/* <h1 className="text-xl font-bold">Nawras</h1> */}
                 <div className='flex items-center gap-2'>
