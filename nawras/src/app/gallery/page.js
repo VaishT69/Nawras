@@ -23,7 +23,7 @@ export default function Gallery() {
         <h1 className="text-4xl md:text-6xl font-black text-black text-center pb-10">
           Latest Videos
         </h1>
-        <hr className='w-2 h-2 bg-black '/>
+        {/* <hr className='w-20 h-2 bg-black '/> */}
 
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -58,7 +58,7 @@ export default function Gallery() {
               />
               <button
                 onClick={() => setSelectedVideo(null)}
-                className="absolute top-4 right-4 text-white text-3xl font-bold"
+                className="absolute top-4 right-4 text-white text-3xl font-bold cursor-pointer"
               >
                 &times;
               </button>
