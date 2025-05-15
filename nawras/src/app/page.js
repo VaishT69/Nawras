@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../components/buttons/Button";
 import Albums from "../components/Albums/Album";
-import ImageCarousel from "@/components/ImageCarousel/ImageCarousel"
+import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
 export default function Home() {
   return (
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -104,20 +104,30 @@ export default function Home() {
     //   </footer>
     // </div>
     <main>
-      <section className=" ">
-        <div className=" w-full h-full flex items-center justify-center">
-          <Image
-            src="/assets/images/nawras-logo.jpg"
-            width={600}
-            height={20}
-            alt="img"
-          />
+      <section className="py-12 ">
+        <div className="flex flex-col md:flex-row items-center md:items-start mt-8 justify-center">
+          <div className="w-full h-full flex justfiy-center items-center">
+            <Image
+              src="/assets/images/nawras-logo.jpg"
+              width={600}
+              height={20}
+              alt="img"
+            />
+          </div>
+          <div className="w-full mt-0">
+            <div className="px-6 max-w-6xl mx-auto text-black ">
+              <p className="text-lg leading-relaxed text-blue-900 mr-36">
+                Welcome to Nawras Music Productions
+              </p>
+              <h1 className="text-8xl font-bold mb-4">JOIN THE CLUB</h1>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
-  <ImageCarousel/>
-</section>
+      <section className="">
+        <ImageCarousel />
+      </section>
 
       <section>
         <div className="flex flex-col md:flex-row gap-8 items-start">
@@ -128,7 +138,6 @@ export default function Home() {
             </h1>
             <p className="text-black">Contact us now for more information</p>
             <div className=" mt-2">
-
               {" "}
               <Link href="/contact">
                 {/* <button className="bg-amber-200 hover:bg-red-400 text-black">Contact Us</button> */}
@@ -138,7 +147,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Albums/>
+      <Albums />
     </main>
   );
 }

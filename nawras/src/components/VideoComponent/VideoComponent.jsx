@@ -18,10 +18,8 @@ export default function VideoComponent() {
       ];
     return(
         <main>
-        <section className="px-4 py-16 bg-[#EFE3B5] rounded-4xl ">
-          <h1 className="text-4xl md:text-6xl font-black text-black text-center pb-10">
-            Latest Videos
-          </h1>
+        <section className="">
+        
           {/* <hr className='w-20 h-2 bg-black '/> */}
   
           <div className="max-w-7xl mx-auto">
